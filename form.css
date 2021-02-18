@@ -1,0 +1,98 @@
+body{
+    box-sizing: border-box;
+    font-size: 10px;
+}
+*{
+    box-sizing: inherit;
+}
+h1{
+    text-align: center;
+    font-size: 4em;
+}
+
+/* FORM style start */
+form{
+    background-color: lightgrey;
+    padding: 5px;
+    max-width: 900px;
+    margin: auto;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+@media(max-width: 600px){
+    .container{
+        width: 100%;
+        min-width: 200px;
+    }
+}
+p{
+    font-size: 1.8em;
+}
+/* left labels style */
+.row > label, .label{
+    font-size: 1.4em;
+    text-align: right;
+    margin-right: 3%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* width for left labels and inputs*/
+.row > input, 
+.row > label, 
+.row > .label,
+textarea{
+    width: 48%;
+}
+textarea{
+    height: 50px;
+    resize: vertical;
+}
+/* inputs stylings */
+input, textarea{
+    font-size: 1em;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+}
+select{
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+}
+
+/* margin between rows */
+.row{
+    margin: 20px 0;
+}
+
+/* list styles */
+ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li label{
+    font-size: 1.4em;
+    vertical-align: sub; /*for codepen only*/
+}
+
+/* margin between li */
+ul li + li {
+    margin-top: 10px;
+}
+
+/* submit button style */
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(105, 174, 216);
+    color: white;
+}
+.center{
+    text-align: center;
+}
